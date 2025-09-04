@@ -20,7 +20,7 @@ cd text1
 npm install
 
 ## create a file .env in the root directory and put this in the file you created
--DATABASE_URL=mongodb+srv://chideraaslem:323232@clustertext1.tk2k5j4.mongodb.net/
+-DATABASE_URL= your_mongodb_connection_string
 -SECRET= dexx
 
 ## you start your server
