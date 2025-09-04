@@ -21,7 +21,7 @@ npm install
 
 ## create a file .env in the root directory and put this in the file you created
 -DATABASE_URL= your_mongodb_connection_string
--SECRET= dexx
+-SECRET= put_your_secret_key
 
 ## you start your server
 -npm run dev
@@ -36,7 +36,7 @@ POST /api/v1/register
 Body:
 
 {
-  "fullName": "John Doe",
+  "name": "John Doe",
   "email": "john@example.com",
   "password": "mypassword"
 }
@@ -54,12 +54,13 @@ Body:
 ##Task Routes
 
 Create Task
-POST /api/v1/getnewList
-Body:
+POST /api/v1/createnewList
 
+Body:
 {
   "title": "Buy groceries",
-  "description": "Milk, Bread, Eggs"
+  "description": "Milk, Bread, Eggs",
+  "completed": true or false
 }
 
 
